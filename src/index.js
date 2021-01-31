@@ -1,11 +1,10 @@
+require("bluebird").config({ cancellation: true });
+const TelegramBot = require("node-telegram-bot-api");
 const path = require("path");
 require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
-require("bluebird").config({ cancellation: true });
-
 const storage = require("./storage");
 const neon = require("./neon");
 
-const TelegramBot = require("node-telegram-bot-api");
 const token = process.env.TELEGRAM_TOKEN;
 const adminChatId = process.env.TELEGRAM_ADMIN;
 const bot = new TelegramBot(token, { polling: true });
