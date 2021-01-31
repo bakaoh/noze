@@ -1,4 +1,8 @@
 {
+  "name": "noze",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "bluebird": "^3.7.2",
